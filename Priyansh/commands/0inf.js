@@ -27,22 +27,22 @@ module.exports.run = async function ({ api, event }) {
 
   // Your personal Imgur + anime links
   const imgLinks = [
-    "https://i.imgur.com/JK7ywKt.jpeg",
-    "https://i.imgur.com/5yHDG3r.jpeg",
-    "https://i.imgur.com/HyQvK9J.jpeg"
+    "https://i.imgur.com/GCQrSE5.jpeg",
+    "https://i.imgur.com/cwfSUnQ.jpeg",
+    "https://i.imgur.com/tgnWIpu.jpeg",
   ];
 
   const chosenImage = imgLinks[Math.floor(Math.random() * imgLinks.length)];
 
   const msg = `✨ 𝙎𝙒𝘼𝙂 𝙈𝙊𝘿𝙀 𝙊𝙉 ✨\n━━━━━━━━━━━━━━━\n\n` +
-              `👑 𝗕𝗢𝗧: ${global.config.BOTNAME || "🔥 RAJ XWD THAKUR 👿"}\n` +
-              `🧠 𝗢𝗪𝗡𝗘𝗥:𝙍𝘼𝙅 𝙏𝙃𝘼𝙆𝙐𝙍 𝙓𝙒𝘿  🔥 (UID:100032269830615 )\n` +
-              `📸 𝗜𝗡𝗦𝗧𝗔: @rajthakur8` +
-              `📍 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX || "+"}\n` +
+              `👑 𝗕𝗢𝗧: ${global.config.BOTNAME || "🔥 𝗙𝗜𝗭𝗔 𝗞𝗛𝗔𝗡 👿"}\n` +
+              `🧠 𝗢𝗪𝗡𝗘𝗥:𝗙𝗜𝗭𝗔 𝗞𝗛𝗔𝗡   🔥 (UID: )\n` +
+              `📸 𝗜𝗡𝗦𝗧𝗔: 𝗦𝗢𝗥𝗥𝗬` +
+              `📍 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX || ","}\n` +
               `📆 𝗗𝗔𝗧𝗘: ${dateNow}\n` +
               `⏳ 𝗨𝗣𝗧𝗜𝗠𝗘: ${hours}h ${minutes}m ${seconds}s\n\n` +
               `💌 𝗧𝗬𝗣𝗘 '${global.config.PREFIX || "+"}help' 𝗙𝗢𝗥 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 💌\n` +
-              `━━━━━━━━━━━━━━━\n💖 𝑴𝒂𝒅𝒆 𝒘𝒊𝒕𝒉 𝑺𝒘𝒂𝒈 𝒃𝒚 RAJ THAKUR XWD`;
+              `━━━━━━━━━━━━━━━\n💖 𝑴𝒂𝒅𝒆 𝒘𝒊𝒕𝒉 𝑺𝒘𝒂𝒈 𝒃𝒚 Fiza khan`;
 
   const callback = () =>
     api.sendMessage(
