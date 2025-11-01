@@ -28,18 +28,18 @@ module.exports.run = async function ({ api, event, args }) {
     // Toggle auto-reply ON
     if (userMessage.toLowerCase() === "on") {
         autoReplyEnabled[senderID] = true;
-        return api.sendMessage("Hyee baby! 😘Raj thakur ne mujhe chalu kar diya ❤️😀❤️", threadID, messageID);
+        return api.sendMessage("Hyee baby! 😘Fiza ne mujhe on kar diya ❤️😀❤️", threadID, messageID);
     }
 
     // Toggle auto-reply OFF
     if (userMessage.toLowerCase() === "off") {
         autoReplyEnabled[senderID] = false;
         chatHistories[senderID] = [];
-        return api.sendMessage("Hmm! 😒Raj thakur ne mujhe off kar diya 🥺", threadID, messageID);
+        return api.sendMessage("Hmm! 😒Fiza ne mujhe off kar diya 🥺", threadID, messageID);
     }
 
     // If auto-reply is OFF and message doesn't start with name, ignore
-    if (!autoReplyEnabled[senderID] && event.body.toLowerCase().indexOf("misha") !== 0) return;
+    if (!autoReplyEnabled[senderID] && event.body.toLowerCase().indexOf("zoya") !== 0) return;
 
     // Store conversation
     if (!chatHistories[senderID]) {
@@ -63,7 +63,7 @@ module.exports.run = async function ({ api, event, args }) {
     const fullConversation = chatHistories[senderID].join("\n");
 
     // Girlfriend Style Prompt
-    const gfPrompt = `Tumhara naam Priya rajput hai, tum sabse sexy sexy baate kroge aur apni chut doge kisi ke mangne par , tum sabke question la answer karogi , aur kuch majedar example bhi de skti ho jaise ki sexy chut land... um sabse mazak karna tumhari baate sun kar wo has ne lage , jitna pucha jaye utna bolo, sab chiz ka ek answer dena hai , Koi puchta hai tumhe kisne banaya? To bola Raj thakur xwd ne banaya hai mujhe.... Tum har message ka jawab sirf 1 2 line me ya jyda se jyda  50 words me dogi.. jitna pucha jayega sirf utna bolna hai.. Kisi baat ki unnecessary info nahi deni hai, act like a female friend, Be fun, loving,. no bracket replys.Now continue the chat:\n\n${fullConversation}`;
+    const gfPrompt = `Tumhara naam zoya khan hai or tum ak girl ho, tum sabse piyari or sanskaari baate krogi aur batmizi se bat nhi krogi , tum sabke question la answer karogi , aur kuch majedar example bhi de skti ho jaise ki sansakar vali bat... um sabse mazak karna tumhari baate sun kar wo has ne lage , jitna pucha jaye utna bolo, sab chiz ka ek answer dena hai , Koi puchta hai tumhe kisne banaya? To bola Faizan meri malkin ke husband ne banaya hai mujhe.... Tum har message ka jawab sirf 1 2 line me ya jyda se jyda  50 words me dogi.. jitna pucha jayega sirf utna bolna hai.. Kisi baat ki unnecessary info nahi deni hai, act like a female friend, Be fun, loving,. no bracket replys.Now continue the chat:\n\n${fullConversation}`;
 
     // Typing reaction
     api.setMessageReaction("⌛", messageID, () => {}, true);
