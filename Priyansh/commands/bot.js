@@ -17,12 +17,12 @@ function delay(ms) {
 }
 
 const femaleNames = [
-    "priya", "anjali", "isha", "pooja", "neha", "shruti", "riya", "simran",
-    "divya", "kavita", "sakshi", "meena", "ashita", "shweta", "radhika", "sita",
-    "gita", "nisha", "khushi", "aisha", "zara", "fatima", "muskan", "rani",
-    "ritu", "surbhi", "swati", "vanya", "yashika", "zoya",
-    "sonam", "preeti", "kajal", "komal", "sana", "alia", "kriti", "deepika",
-    "rekha", "madhuri", "juhi", "karina", "rani", "tanu", "esha", "jhanvi",
+    "FIZA", "anjali", "isha", "pooja", "neha", "shruti", "riya", "simran",
+    "fiza", "kavita", "sakshi", "meena", "ashita", "shweta", "radhika", "sita",
+    "Fiza", "nisha", "khushi", "aisha", "zara", "fatima", "muskan", "rani",
+    "shibli", "surbhi", "swati", "vanya", "yashika", "zoya",
+    "Shibli", "preeti", "kajal", "komal", "sana", "alia", "kriti", "deepika",
+    "fiza", "madhuri", "juhi", "karina", "rani", "tanu", "esha", "jhanvi",
     "kiara", "shraddha", "parineeti", "bhumi", "misha"
 ];
 
@@ -369,7 +369,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
       `${randomTopBorder}\n\n` +
       `🙃 hay 😑『 ${name} 』\n\n` +
       `${randomEmojiForReply} 『 ${rand} 』\n\n` +
-      `— ${randomEmojiForCredit} Raj xwd thakur ${randomEmojiForCredit}\n\n` +
+      `— ${randomEmojiForCredit} 𝐅𝐈𝐙𝐀 𝐊𝐇𝐀𝐍 ${randomEmojiForCredit}\n\n` +
       `🕒 ${randomEmojiForTime} ${randomUniqueTimeText}\n\n` +
       `${randomBottomBorder}`
   };
